@@ -1,11 +1,13 @@
-pipeline {
-    agent any
+pipeine{
+   agent{
+      docker{image 'node:16-alphine'}
+      }
 
-    stages {
-        stage('Test') {
-            steps {
-                echo 'Pipeline working'
-            }
+   stages{
+     stage('test'){
+        steps{
+          sh 'node --version'
+          }
         }
-    }
-}
+      }
+   }
