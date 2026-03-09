@@ -5,7 +5,7 @@ pipeline {
 
         stage('backend') {
             agent {
-                docker { image 'maven:3.9.9-adoptopenjdk-11' }
+                docker { image 'image 'maven:3.9.9-eclipse-temurin-11'' }
             }
             steps {
                 sh 'mvn --version'
